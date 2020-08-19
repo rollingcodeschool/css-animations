@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+* {
+  margin:0;
+}
+#container {
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+#circle{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  border: 5px solid black;
+  position:absolute;
+  opacity:0;
+  animation-name:example6;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
+.style{
+  margin-top:10px;
+  font-size:100px;
+  font-weight:bold;
+  font-family: 'Teko', sans-serif;
+  position:absolute;
+}
+
+.rc{
+  color: gray;
+  animation-name: example3;
+  animation-duration: 5s;
+  
+}
+
+.min{margin-right:450px;
+  color: gray;
+ animation-name: example5;
+  animation-duration: 5s;
+animation-timing-function: ease-out;}
+
+.may{
+  margin-left:450px;
+  color: gray;
+  animation-name: example4;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+
+
+@keyframes example3{
+  0% {opacity:1;}
+  25% {opacity:0.3;}
+  50% {opacity:0.1;}
+  100% {opacity:0;}
+}
+
+@keyframes example4{
+  100%{margin-left:60px;
+      color:black;}
+}
+
+@keyframes example5{
+  100%{margin-right:60px;
+      color:black;}
+}
+
+@keyframes example6{
+ 
+  100%{opacity:1}
+}
